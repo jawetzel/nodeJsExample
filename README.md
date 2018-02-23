@@ -16,5 +16,10 @@ npm install -g gulp
 ```bash
 cd [project path]
 npm install
+```
+
+### Run Project
+
+```bash
 npm run dev
 ```

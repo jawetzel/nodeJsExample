@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "npm run build && node dist/index.js",
     "dev": "gulp nodemon"
@@ -25,6 +25,7 @@
     "gulp-babel": "^7.0.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-nodemon": "^2.2.1",
+    "jasmine": "^3.1.0",
     "rimraf": "^2.6.2"
   }
 }

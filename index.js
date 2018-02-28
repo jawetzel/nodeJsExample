@@ -1,6 +1,9 @@
 import express from 'express';
+
 import cors from 'cors';
 import bodyParser from 'body-parser';
+
+import Database from './apiFiles/DatabaseExample';
 
 let app = express();
 
@@ -13,6 +16,11 @@ const port = process.env.PORT || 8080;
 app.listen(port, function(){
     console.log('running on port: ' + port);
 });
+
+
+//runs the Db Example from apiFiles/DatabaseExample
+Database.DataBaseExample();
+
 
 const router = express.Router();
 

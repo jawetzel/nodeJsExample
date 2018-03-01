@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extend: true})); //support for url encoded bodies
 
 const port = process.env.PORT || 8080;
 
-app.listen(port, function(){
+app.listen(port, () => {
     console.log('running on port: ' + port);
 });
 
